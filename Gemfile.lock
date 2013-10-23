@@ -57,6 +57,8 @@ GEM
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.2)
+    faker (1.2.0)
+      i18n (~> 0.5)
     hike (1.2.3)
     i18n (0.6.5)
     journey (1.0.4)
@@ -144,6 +146,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   country_select
+  faker
   jquery-rails
   pg
   rails (= 3.2.14)

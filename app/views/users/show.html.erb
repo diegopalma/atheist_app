@@ -1,10 +1,26 @@
+<% provide(:title, @user.name) %>
 
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
+        <%= gravatar_for @user %>
         Welcome, <%= @user.name %>
+
+        <br />
       </h1>
-    </section>
-  </aside>
-</div>
+      <p> We are happy to see that atheists in <%= @user.country %> are speaking up their minds.
+       So far we are total of <%= @number_of_users %> atheists that strongly believe that the world needs more common sense and less superstition. Now is time to make your status official. Tell the world you are proud!</p>
+
+      <!--  <%= @peers %> -->
+
+      <%=link_to image_tag("facebook.png", :size => "72x72"), "http://j.mp/HbkuAG"%>
+      <%=link_to image_tag("twitter.png", :size => "72x72"), ""%>
+      <%=link_to image_tag("google-plus.png", :size => "72x72"), ""%>
+
+
+
+
+     </section>
+   </aside>
+ </div>
