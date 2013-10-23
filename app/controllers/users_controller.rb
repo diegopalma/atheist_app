@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    full_name = @user.name
+    @first_name = full_name.split(' ').shift
     @peers = User.where(country: @user.country).count
     @number_of_users = User.all.count
   end

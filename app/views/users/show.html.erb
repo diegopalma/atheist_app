@@ -1,26 +1,29 @@
 <% provide(:title, @user.name) %>
+<div class="profile_container clearfix">
+  <div class="greeting">
+    <!-- <%= gravatar_for @user %> -->
+    <h1>Welcome, <%= @first_name %></h1>
 
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        Welcome, <%= @user.name %>
+    <p> We are happy to see that atheists in <strong> <%= @user.country %> </strong> are speaking up their minds.  <!--  <%= @peers %> -->
+     We are a comunity of <strong> <%= @number_of_users %> atheists </strong>(and counting!) that strongly believe that the world needs more common sense and less superstition. </p>
+     <p> Now is time to make your status official. Tell the world you are proud!</p>
+   </div>
+   <div class="next">
+     <h3>Wondering what to do next?</h3>
+     <ul>
+      <li>See useful <a href="/resources">resources</a></li>
+      <li>Read and share the <a href="/manifesto">manifesto</a></li>
+      <li>Make your status official!</li>
+    </ul>
+  </div>
 
-        <br />
-      </h1>
-      <p> We are happy to see that atheists in <%= @user.country %> are speaking up their minds.
-       So far we are total of <%= @number_of_users %> atheists that strongly believe that the world needs more common sense and less superstition. Now is time to make your status official. Tell the world you are proud!</p>
+  <div class="proud">
+    <h1>Make it official!</h1>
+    <div class="proud_links">
+     <%=link_to image_tag("facebook.png", :size => "72x72"), "http://j.mp/1a7J2XG"%>
+     <%=link_to image_tag("twitter.png", :size => "72x72"), ""%>
+     <%=link_to image_tag("google-plus.png", :size => "72x72"), ""%>
+   </div>
 
-      <!--  <%= @peers %> -->
-
-      <%=link_to image_tag("facebook.png", :size => "72x72"), "http://j.mp/HbkuAG"%>
-      <%=link_to image_tag("twitter.png", :size => "72x72"), ""%>
-      <%=link_to image_tag("google-plus.png", :size => "72x72"), ""%>
-
-
-
-
-     </section>
-   </aside>
  </div>
+</div>
