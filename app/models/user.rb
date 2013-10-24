@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }
   validates :age, :numericality => true
 
+  has_many :articles
 
 end
 

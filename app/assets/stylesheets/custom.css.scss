@@ -2,6 +2,27 @@
 
 /* universal */
 
+.a {
+  text-decoration: none;
+}
+
+.right {
+  width: 500px;
+  float: left;
+}
+
+.left {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+
+.abajo {
+  clear: both;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -19,12 +40,25 @@ textarea {
 }
 
 .center {
-  text-align: center;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .center h1 {
   margin-bottom: 10px;
+  text-align: left;
 }
+
+.center p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.center a {
+  font-size: 20px;
+}
+
+
 
 /* typography */
 
@@ -72,16 +106,6 @@ p {
   text-decoration: none;
 }
 
-.logged_msg {
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.logged_msg a {
-  text-decoration: none;
-  color: #fff;
-}
 /* footer */
 
 footer {
@@ -101,7 +125,7 @@ footer a:hover {
 }
 
 footer small {
-  float: right;
+  float: left;
 }
 
 footer ul {
@@ -177,6 +201,29 @@ aside {
   }
 }
 
+.title {
+  margin-bottom: 0px;
+  & h1 {
+    margin-bottom: 0px;
+  }
+}
+
+.panel {
+  text-align: right;
+  font-size: 16px;
+  margin-top: 5px;
+  & a {
+    margin-right: 20px;
+    text-decoration: none;
+  }
+}
+
+.text {
+  margin-top: 20px;
+}
+
+
+
 .profile_container ul {
   margin-top: 10px;
   font-size: 16px;
@@ -194,6 +241,7 @@ aside {
 .next {
   float:left;
   width: 380px;
+  margin-top: 20px;
 }
 
 .proud {
@@ -243,4 +291,34 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* manifesto */
+
+.btn-center {
+  text-align: center;
+}
+
+.manifesto p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* home */
+
+.abajo {
+  text-align: center;
+}
+
+#steps {
+  margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.center {
+  margin-top: 80px;
+  margin-bottom: 400px;
+  margin-left: 60px;
 }

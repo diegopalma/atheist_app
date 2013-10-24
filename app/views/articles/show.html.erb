@@ -1,0 +1,7 @@
+<h1> <%= @article.title %> </h1>
+<p><%= @article.body %></p>
+
+
+<%= link_to "Delete Article", @article, :method => :delete, :confirm => "Are you sure?" %> <br>
+<%= link_to "Back to Articles", articles_path %>
+

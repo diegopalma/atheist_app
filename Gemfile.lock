@@ -52,7 +52,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    country_select (1.2.0)
     debug_inspector (0.0.2)
     diff-lcs (1.2.4)
     erubis (2.7.0)
@@ -145,7 +144,6 @@ DEPENDENCIES
   bootstrap-sass (= 2.0.0)
   capybara
   coffee-rails (~> 3.2.1)
-  country_select
   faker
   jquery-rails
   pg

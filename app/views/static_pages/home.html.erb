@@ -1,12 +1,32 @@
-<div class="center hero-unit">
-  <h1>Are you a proud atheist? Make it official!</h1>
-  <h2>The world needs your voice</h2>
-  <p>Sign up. Speak up. Join the movement.
-  </p>
-  <%= link_to "Read the manifesto", manifesto_path %> <br />
-  <%= link_to "Become a signatory", signup_path, class: "btn btn-large btn-primary" %>
+<div class="center">
+  <div class="right">
+    <h1>Are you a proud atheist? </h1>
+    <h1>Make it official!</h1>
+    <p>It's easy, free and fun</p>
+    <p><%= link_to "Read the manifesto", manifesto_path %></p>
+  </div>
+
+  <div class="left">
+    <%= link_to "Become a signatory", signup_path, class: "btn btn-large btn-primary" %>
+    <br />
+  </div>
+
+
+<!--    <div class="cover-image">
+      <%= image_tag("EarthFromSpace.jpg")%>
+  </div> -->
+
+
+<!--   <div class="abajo">
+    <div id="steps"><%= link_to "Read the manifesto", manifesto_path %></div>
+    <div id="steps">Become a signatory </div>
+    <div id="steps">Share your atheist status on social media </div>
+  </div> -->
 </div>
 
- <!--  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %> -->
 
 
+<!--     <h3>The world needs your voice</h3>
+    <p>Sign up. Speak up. Join the movement.</p>
+  </div>
+</div> -->
