@@ -30,6 +30,8 @@
     <%= f.password_field :password_confirmation %><br />
     <%= f.submit %>
     <% end %>
+
+    <%= link_to "Delete User", @user, :method => :delete, :confirm => "Are you serious?" %>
 </div>
 </div>
 

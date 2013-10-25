@@ -4,7 +4,7 @@
       <h1>List of signatories</h1>
       <h3><%= @number_of_users %> atheists and counting</h3>
     <% @users.each do |user| %>
-    <p><%= user.name %> from <%= user.country %> quit <%= user.religion %> </p>
+    <p><%= user.name %> from <%= user.country %> quit <%= user.religion %> <%= user.created_at.strftime(" on %m/%d/%Y") %></p>
     <% end %>
     </div>
 </div>
