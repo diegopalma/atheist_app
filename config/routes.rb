@@ -17,6 +17,7 @@ SampleApp::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
   match '/manifesto', to: 'static_pages#manifesto'
   match '/resources', to: 'static_pages#resources'
+  match '/signatories', to: 'static_pages#signatories'
 
 end
 #== Route Map
