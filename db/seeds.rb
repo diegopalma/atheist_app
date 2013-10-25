@@ -10,8 +10,8 @@ User.delete_all
 
 # :name, :age, :sex, :email, :country, :religion, :password, :password_confirmation
 
-religion = %w(Christianity Islam Hinduism Buddhism Judaism Scientology)
+religion = %w(Christianity Christianity Christianity Islam Hinduism Judaism)
 
-50.times do
+20.times do
   User.create(name: Faker::Name.name, age: 25, sex: "Male", email: Faker::Internet.email, country: Faker::Address.country, religion: religion.sample, password: "jajaja", password_confirmation: "jajaja")
 end
