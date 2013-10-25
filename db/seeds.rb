@@ -5,7 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require 'faker'
 User.delete_all
 
 # :name, :age, :sex, :email, :country, :religion, :password, :password_confirmation
