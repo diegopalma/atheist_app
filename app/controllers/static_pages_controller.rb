@@ -16,7 +16,7 @@ class StaticPagesController < ApplicationController
   end
 
   def signatories
-    @users = User.all
+    @users = User.order("created_at DESC")
     @number_of_users = User.all.count
   end
 
